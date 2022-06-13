@@ -1,0 +1,2 @@
+# PlayGamesBeta-OK
+ PLAYGAMESok
