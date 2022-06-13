@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: linear-gradient(45deg, red, rgb(59, 0, 0));
+}
+
+.header h1 {
+  letter-spacing: 5px;
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 94, 0), 0 0 8px rgb(255, 251, 0);
+}
+#p1{
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(20, 0, 0);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+}
+.card h2{
+  font-size: 3em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.rightcolumn h3{
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.card p{
+  font-size: large;
+}
+h5{
+  font-size: larger;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 id="titulo">PlayGames</h1>
+  <p id="p1">Tudo sobre o mundo dos games!</p>
+</div>
+
+<div class="topnav">
+  <a href="Noticias.html"><strong>Noticias</strong></a>
+  <a href="Suporte.html"><strong>Suporte</strong></a>
+  <a href="login.html" style="float:right"><strong>Sair</strong></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>FORTINITE</h2>
+      <h5>Nova atualização!!</h5>
+      <img src="img/fortnite-overview-differences-aside-1200x607-1c5b95da9f90.jpg" alt="img" style="height: 300px; border-radius: 10px;">
+      <p><strong><a href="https://www.epicgames.com/fortnite/pt-BR/chapter-3-season-3">Saiba Mais</a></strong></p>
+      <p><strong>CAPÍTULO 3: TEMPORADA 3 DO FORTNITE — NA VIBE</strong>
+       <br> NO CAPÍTULO 3: TEMPORADA 3 DO FORTNITE — NA VIBE, A ILHA VIRA UMA FESTA GIGANTE. SAIA QUICANDO PELA CACHOEIRA DA REALIDADE, MONTE EM CRIATURAS SELVAGENS, AVENTURE-SE PELA MONTANHA-RUSSA BOLAFUSO E CONHEÇA UM NOVO ARSENAL. MERGULHE NA TEMPORADA 3 E ESPALHE AS BOAS VIBRAÇÕES!
+    </p>
+    </div>
+    <div class="card">
+      <h2>MINECRAFT</h2>
+      <h5>Coleção de NFTs estilo Minecraft 'some' com mais de R$ 6 milhões</h5>
+      <img src="img/minecraft2.jpg" alt="img"
+      style="height: 300px; border-radius: 10px;">
+      <p><strong><a href="https://www.tecmundo.com.br/mercado/232929-colecao-nfts-estilo-minecraft-some-r-6-milhoes.htm">Saiba Mais</a></strong></p>
+      <p>O jogo no formato pay to earn (P2E) e coleção de NFTs conhecido como Blockverse saiu do ar de forma inesperada neste final de semana. Baseado de forma não oficial em Minecraft, o projeto composto por 10 mil tokens não fungíveis simplesmente desapareceu — o que envolve ainda o sumiço de mais de US$ 1,2 milhão (cerca de R$ 6,4 milhões em conversão direta) em Ethereum, originalmente pagos pelos usuários para colecionar os NFTs e participar da plataforma.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>GTA V</h3>
+      <img id="img1" src="img/gta5.jpg" alt="img"
+      style="height: 120px; border-radius: 10px;">
+      <p>programador recria jogo utilizando IA; confira o resultado</p>
+      <p><a href="https://www.tecmundo.com.br/voxel/219810-gta-5-programador-recria-jogo-utilizando-ia-confira-resultado.htm">saiba mais</a></p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <img src="img/valley.jpg" alt="img" style="height: 120px; border-radius: 10px;">
+      <p>veja tambem</p>
+      <img id="img2" src="img/260px-Capa_de_Limbo.jpg" alt="img" style="height: 150px;
+      width: 210px; border-radius: 10px; ">
+      <p>veja tambem</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <strong>
+      <p>Desenvolvido por : Wesly Gleison Martins / Hugo Borges Alves / Antonio / Guilherme</p>
+    </strong>
+</div>
+
+</body>
+</html>
+
+
+

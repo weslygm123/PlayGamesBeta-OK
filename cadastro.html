@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login JS</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        div {
+            color: blanchedalmond;
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            left: 50%;
+            top: 1%;
+            transform: translate(-50%);
+        }
+        
+        body {
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+            border-radius: 5px;
+            border-style: double;
+            border-color: rgb(255, 255, 255);
+        }
+        
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+        
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+        }
+        
+        input {
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="PlayGames">
+        <h1>PlayGames</h1>
+    </div>
+    <form>
+        <h3>CADASTRO</h3>
+        <input type="email" placeholder="Email" id="emai"> 
+        <input type="text" placeholder="Nome" id="nome">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit"  onclick="Cadastrar(); return false" >
+
+    </form>
+
+
+    <script>
+        function Cadastrar() {
+
+            var login = document.getElementById('Nome').value;
+            var senha = document.getElementById('Senha').value;
+
+            if (login == "admin" && senha == "admin") {
+                alert('Sucesso');
+                location.href = "home.html";
+            } else {
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
